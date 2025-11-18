@@ -39,6 +39,7 @@ class TelaAnalise(ttk.Frame):
 
     # cria o gráfico de pizza de despesas por categoria
     def grafico_despesas(self):
+        # limpa o canvas para desenhar um novo gráfico atualizado
         self._limpar_canvas()
         por_cat = data_manager.get_dados_grafico_despesas()
         if por_cat is None or por_cat.empty:
@@ -55,6 +56,7 @@ class TelaAnalise(ttk.Frame):
 
     # cria o gráfico de receita x despesas em barra
     def grafico_saldo(self):
+        # limpa o canvas para desenhar um novo gráfico atualizado
         self._limpar_canvas()
         total_receitas, total_despesas = data_manager.get_dados_grafico_saldo()
 
@@ -62,6 +64,7 @@ class TelaAnalise(ttk.Frame):
         ax.bar(["Receitas", "Despesas"], [total_receitas, total_despesas], color=["#4CAF50", "#F44336"])
         ax.set_ylabel("Valor (R$)")
         ax.set_title("Receitas x Despesas")
+        # for para criar as labels em cima de cada barra, rodando a quantidade de vezes que for o valor de total_receitas e total_despesas
         for i, v in enumerate([total_receitas, total_despesas]):
             ax.text(i, v + max(1.0, v*0.01), f"R$ {v:,.2f}", ha="center")
         fig.tight_layout()
@@ -70,6 +73,7 @@ class TelaAnalise(ttk.Frame):
 
     def _desenhar_grafico(self, fig):
         # função para desenhar o gráfico com o matplotlib + tkinter
+        # apenas desenha o gráfico, as outras funções que o constroem e depois chamam essa auxiliar para desenhar ele já com tudo definido
         self.current_fig = fig
         canvas = FigureCanvasTkAgg(fig, master=self.canvas_frame)
         canvas.draw()
