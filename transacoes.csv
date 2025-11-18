@@ -1,1 +1,7 @@
 Tipo,Categoria,Descrição,Valor,Data
+Receita,Outros,Salário,2400.0,18/11/2025
+Despesa,Outros,Cartão de crédito,1000.0,18/11/2025
+Despesa,Lazer,teste,400.0,18/11/2025
+Receita,Outros,teste,500.0,18/11/2025
+Despesa,Moradia,teste,100.0,18/11/2025
+Despesa,Transporte,teste,50.0,18/11/2025

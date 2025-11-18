@@ -75,8 +75,9 @@ O arquivo `transacoes.csv` será criado automaticamente quando a primeira transa
 ```
 minhas-financas/
 │
+├── /assets               # Pasta com prints da aplicação para serem exibidas neste ReadMe
 ├── main.py               # Arquivo principal da aplicação
-├── app.py               # Arquivo responsável por rodar o arquivo principal da aplicação que chama todas as funções necessárias
+├── app.py                # Arquivo responsável por rodar o arquivo principal da aplicação que chama todas as funções necessárias
 ├── config.py             # Arquivo de configuração para definir corretamente qual arquivo CSV a aplicação lerá para escrever, editar, ler ou excluir informações
 ├── data_manager.py       # Arquivo responsável por tratar corretamente a criação de informações no arquivo CSV (edições, salvamentos, exclusões)
 ├── tela_analise.py       # Códigos da tela de análise financeira (criação da tela, gráficos, seletor)
@@ -86,6 +87,30 @@ minhas-financas/
 ├── transacoes.csv        # Arquivo criado automaticamente com os registros
 └── README.md             # Documentação do projeto
 ```
+
+---
+
+## **Imagens da Aplicação**
+
+### **Tela Inicial**
+
+![Tela Inicial](assets/tela_inicial.jpg)
+
+### **Tela de Cadastro de Transações**
+
+![Tela de Cadastro](assets/cadastro.jpg)
+
+### **Tela de Edição/Listagem de Transações**
+
+![Tela de Edição](assets/edicao.jpg)
+
+### **Tela de Análise Financeira – Despesas por Categoria**
+
+![Análise Financeira 1](assets/analise1.jpg)
+
+### **Tela de Análise Financeira – Receitas x Despesas**
+
+![Análise Financeira 2](assets/analise2.jpg)
 
 ---
 
