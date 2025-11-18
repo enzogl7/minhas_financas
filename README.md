@@ -76,6 +76,13 @@ O arquivo `transacoes.csv` será criado automaticamente quando a primeira transa
 minhas-financas/
 │
 ├── main.py               # Arquivo principal da aplicação
+├── app.py               # Arquivo responsável por rodar o arquivo principal da aplicação que chama todas as funções necessárias
+├── config.py             # Arquivo de configuração para definir corretamente qual arquivo CSV a aplicação lerá para escrever, editar, ler ou excluir informações
+├── data_manager.py       # Arquivo responsável por tratar corretamente a criação de informações no arquivo CSV (edições, salvamentos, exclusões)
+├── tela_analise.py       # Códigos da tela de análise financeira (criação da tela, gráficos, seletor)
+├── tela_cadastro.py      # Códigos da cadastro de transações (criação da tela, funções de salvar e voltar)
+├── tela_lista.py         # Códigos da tela de listagem/edição de transações existentes (criação da tela, listagem de dados com base no csv, edição e exclusão)
+├── tela_menu.py          # Códigos da tela principal da aplicação (criação da tela, botões de navegação entre menus)
 ├── transacoes.csv        # Arquivo criado automaticamente com os registros
 └── README.md             # Documentação do projeto
 ```
